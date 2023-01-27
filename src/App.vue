@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 class="title">Pokemon API</h1>
+  <img class="logo" style="width:400px" alt="Vue logo" src="https://www.nicepng.com/png/full/62-622961_no-one-knows-if-people-eat-pokmon-png.png">
+  <PokemonList></PokemonList>
+  <PokemonModal></PokemonModal>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokemonList from './components/PokemonList.vue'
+import PokemonModal from './components/PokemonModal.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokemonList,
+    PokemonModal
   }
 }
 </script>
@@ -22,5 +26,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+  width: 100px;
+}
+.title {
+  font-size: 34px;
+  font-family: 'Courier New', Courier, monospace;
 }
 </style>
